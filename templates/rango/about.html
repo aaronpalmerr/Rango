@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+  <head>
+    <title>ABOUT</title>
+  </head>
+
+    <body>
+      <h1>About ... </h1>
+      <div>
+        This is the about page, don'tcha know? <br />
+        <strong>{{ boldmessage }} </strong><br/>
+      </div>
+
+      <div>
+        <a href="/rango/">Index</a><br/>
+        <img src="{{ MEDIA_URL}}cat.jpg" />.
+      </div>
+    </body>
+
+</html>
