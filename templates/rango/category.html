@@ -21,8 +21,10 @@
     The specified category does not exist!
   {% endif %}
   <div>
-		{% if category %}
-			<a href="{% url 'add_page' category.slug %}">Add a Page</a>
-		{% endif %}
+    {% if user.is_authenticated %}
+		  {% if category %}
+			   <a href="{% url 'add_page' category.slug %}">Add a Page</a>
+		  {% endif %}
+    {% endif %}
 	</div>
 {% endblock %}
